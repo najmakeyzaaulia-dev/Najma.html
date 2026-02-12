@@ -3,70 +3,100 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel Jadwal Pelajaran</title>
+    <title>Website Profil Siswa</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
+            background-color: #F5F5DC;
+            margin: 40px;
         }
 
         h1 {
-            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .profil {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .profil img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        hr {
+            margin: 15px 0;
         }
 
         table {
+            width: 100%;
             border-collapse: collapse;
-            width: 80%;
-            max-width: 800px;
-            text-align: center;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
         }
 
         th, td {
-            border: 1px solid black;
-            padding: 15px;
-            font-size: 18px;
+            padding: 10px;
+            text-align: center;
         }
 
-        /* Warna latar belakang untuk header */
-        thead th {
-            background-color: #e2e8f0; /* Abu-abu muda kebiruan */
-        }
-
-        /* Mengatur lebar kolom pertama agar lebih kecil */
-        th:first-child, td:first-child {
-            width: 20%;
+        th {
+            background-color: #dfe6e9;
         }
     </style>
 </head>
 <body>
 
-    <h1>Jadwal Pelajaran Kelas X</h1>
+    <h1>Website Profil Siswa</h1>
+    <hr>
 
+    <div class="profil">
+        <img src="https://image2url.com/r2/default/images/1770853054514-20c45f3a-1b44-4032-a576-7aa5f0866793.jpg">
+
+        <div>
+            <p><strong>Nama:</strong> Najma Keyza Aulia</p>
+            <p><strong>Kelas:</strong> XI IPA 4</p>
+            <p><strong>Sekolah:</strong> SMAN 5 Cimahi</p>
+            <p><strong>Cita-cita:</strong> Industri,teknik kimia</p>
+        </div>
+    </div>
+
+    <h2>Tentang Saya</h2>
+    <p>Saya Najma Keyza Aulia, siswi XI-4 yang sedang belajar HTML di pelajaran Informatika.</p>
+
+    <h2>Media Sosial & Kontak</h2>
+    <ul>
+        <li>Instagram: @najiimaaa__</li>
+        <li>GitHub: </li>
+        <li>Email: najmakeyzaaulia@gmail.com</li>
+    </ul>
+
+    <h2>Riwayat Pendidikan</h2>
     <table>
-        <thead>
-            <tr>
-                <th>Hari</th>
-                <th colspan="3">Mata Pelajaran</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Senin</td>
-                <td>Informatika</td>
-                <td>Matematika</td>
-                <td>Bahasa Indonesia</td>
-            </tr>
-            <tr>
-                <td>Selasa</td>
-                <td>IPA</td>
-                <td>IPS</td>
-                <td>Bahasa Inggris</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>No</th>
+            <th>Sekolah</th>
+            <th>Tahun</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>SD Kartika XIX-4 </td>
+            <td>2016 - 2021</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SMP Negeri 3 Cimahi</td>
+            <td>2021 - 2024</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SMAN 5 Cimahi</td>
+            <td>2024 - Sekarang</td>
+        </tr>
     </table>
 
 </body>
